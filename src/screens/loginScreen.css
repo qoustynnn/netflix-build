@@ -1,0 +1,98 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #111111;
+    font-size: calc(0.75em + 1vmin);
+}
+body {
+  overflow-x: hidden;
+}
+
+.LoginScreen {
+  position: relative;
+  height: 100%;
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/dc1cf82d-97c9-409f-b7c8-6ac1718946d6/a6fda18c-4665-445a-9988-12e2871a59ee/US-en-20230911-popsignuptwoweeks-perspective_alpha_website_large.jpg")
+    center no-repeat;
+  background-size: cover;
+}
+.login-screen-body{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-right: auto;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+}
+.login-screen-body > h2 {
+    font-weight: 400;
+    font-size: calc(16px + 0.4vw);
+    margin-bottom: 30px;
+}
+.login-screen-body > h1 {
+    margin-bottom: 20px;
+}
+.login-screen-body > h3 {
+    font-size: calc(12px + 0.4vw);
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.login-screen-gradient {
+  width: 100%;
+  z-index: 1;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.login-logo {
+  position: fixed;
+  left: 0;
+  width: 150px;
+  object-fit: contain;
+  padding-left: 20px;
+}
+.login-screen-btn {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+.login-screen-input > form > input {
+    padding: 10px;
+    outline-width: 0;
+    height: 30px;
+    width: 30%;
+    border: none;
+    max-width: 600px;
+}
+.get-started-btn{
+    padding: 16px 20px;
+    font-size: 0.745rem;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.login-screen-input {
+    margin: 20px;
+}
